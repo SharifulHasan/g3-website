@@ -10,13 +10,15 @@
 .btn-primary {
     border-radius: 8px;
     background: #FF900E;
-    width: 140px;
+    width: 160px;
     height: 50px;
     color: #FFF;
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
     border: none;
+    padding: 16px 23px;
+    cursor: pointer;
 }
 
 header {
@@ -70,4 +72,30 @@ nav li a {
     text-align: center;
     font-size: 1rem;
     font-weight: 400;
+}
+
+.banner img {
+    width: 100%;
+    margin-top: 18px;
+}
+
+/* Responsive styles */
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+/* tablet or meium size devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
 }
